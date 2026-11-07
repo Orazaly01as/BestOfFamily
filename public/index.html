@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestOfFamily</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>🏆 BestOfFamily</h1>
+            <p>Кто лучший в нашей семье?</p>
+        </header>
+
+        <section id="welcome">
+            <h2>Добро пожаловать!</h2>
+            <p>Введи своё имя, чтобы начать турнир.</p>
+
+            <input id="visitorName"
+                   maxlength="50"
+                   placeholder="Твоё имя">
+
+            <button id="startButton">Начать турнир</button>
+        </section>
+
+        <section id="game" hidden>
+            <div class="progress">
+                <span id="roundName">Раунд 1</span>
+                <span id="matchNumber"></span>
+            </div>
+
+            <h2>Кто лучше?</h2>
+
+            <div class="choices">
+                <button class="choice" id="choice1"></button>
+                <span class="versus">VS</span>
+                <button class="choice" id="choice2"></button>
+            </div>
+
+            <p id="gameMessage">Выбери победителя!</p>
+        </section>
+
+        <section id="result" hidden>
+            <div class="trophy">🏆</div>
+            <h2>Победитель!</h2>
+            <div id="champion"></div>
+            <p id="resultInfo"></p>
+            <button id="restartButton">Играть ещё раз</button>
+        </section>
+
+        <footer>
+            BestOfFamily © 2026
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
